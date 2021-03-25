@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {return view('hola');});
+Route::get('/', function () {return view('index');});
 
 Route::get('/producto/{id}/{nombre}', function ($id,$nombre) {
     return view('verproducto')->with('id', $id)->with('nombre',$nombre);
