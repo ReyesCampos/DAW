@@ -1,0 +1,12 @@
+.container{
+    background-color: whitesmoke;
+}
+.cuadro{
+    background-color: cyan;
+    height: 100px;
+    text-align: center;
+    text-align-last: center;
+}
+.margen{
+    margin: 1px;
+}
