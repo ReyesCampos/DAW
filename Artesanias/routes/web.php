@@ -38,3 +38,6 @@ Route::group(['prefix'=>'admin','as'=>'admin.'],function(){
     Route::resource('productos', App\Http\Controllers\Admin\ProductosController::class);
     Route::resource('usuarios', App\Http\Controllers\Admin\UsuariosController::class);
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
